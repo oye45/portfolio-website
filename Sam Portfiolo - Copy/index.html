@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d2a6add442.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <!-- Navigation Bar -->
+
+    <nav>
+        <div class="sam">SAMUEL</div>
+       
+      <ul id="sidemenu">
+      <li><a href="#home">Home</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#projects">Projects</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <i class="fas fa-times" onclick="closemenu()"></i>
+     </ul>
+     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+
+
+    
+   <section id="home" class="hero">
+    <div class="hero-content">
+        <p>WEB DEVELOPER</p>
+        <h1>HI, I'm <span>OYEKUNLE</span>SAMUEL <br>From Nigeria  </h1>
+        <a href="#projects" class="btn">View Projects</a>
+        </div>
+        </section>
+        <!-- About Me Section -->
+        <section id="about" class="about">
+            <div class="about-content">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Reprehenderit sapiente sunt corrupti laboriosam itaque, amet iusto id velit facere, 
+                            labore, quaerat facilis cum officiis delectus aspernatur? Voluptatum a assumenda ipsum.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tabs" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Building Android/ios Apps</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2021 - current</span><br>UI/UX Design Training at New Horizion</li>
+                                    <li><span>2022-2023</span><br>Team Leader at New Horizion Tech Group</li>
+                                    <li><span>2023-2024</span><br>Training of 100 level students UI/UX Design</li>
+                                    <li><span>2024 - current</span><br>Internship at Bells University of Technology</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021</span><br>UI/UX DesiGN Trainingat Bells University Of Technology </li>
+                                    <li><span>2023</span><br>MBA from BellsTech</li>
+                                    <li><span>2024</span><br>BBA from BellsTech</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!-- Projects Section -->
+            <section id="projects" class="projects">
+            <div class="project-grid">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images//age.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <P>The app connects you to talented people around the world.
+                                Download it from play store.</P>
+                                <a href="age.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images//cal.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <P>The app connects you to talented people around the world.
+                                Download it from play store.</P>
+                                <a href="cal.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images//temp.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <P>The app connects you to talented people around the world.
+                                Download it from play store.</P>
+                                <a href="temp.html"></i><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.100jsprojects.com/projects" class="btn">See More</a>
+            <!-- Project Cards will be populated dynamically -->
+        </div>
+        </section>
+
+        <!-- Contact Section -->
+           <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>oyekunletobi309@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>09061926700</p>
+                        <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                        <a href="images/Web.pdf" download class="btn btn2">DOWNLOAD CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="16" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+               </div>
+               <div class="copyright">
+                <p>Copyright @ SAMUEL Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+               </div>
+           </div>
+    
+ 
+    
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablinks.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontents.classList.remove("active-tabs");     
+        }
+        event.currentTarget.classList.add("ative-links");
+        
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+           </body>
+    </html>
